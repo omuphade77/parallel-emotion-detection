@@ -1,4 +1,5 @@
-# Python bytecode and caches
+
+# Python cache files
 __pycache__/
 *.py[cod]
 *$py.class
@@ -12,18 +13,23 @@ venv/
 env/
 ENV/
 
-# Local environment variables and secrets
+# Environment variables and secrets
 .env
 .env.*
 !.env.example
 .streamlit/secrets.toml
 
-# Local datasets and generated benchmark output
+# Dataset (large files)
 dataset/
-results/
 
-# Editor and operating-system files
+# Generated results and temporary files
+results/
+*.log
+*.tmp
+
+# IDE and OS files
 .idea/
+.vscode/
 .DS_Store
 Thumbs.db
 Desktop.ini
